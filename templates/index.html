@@ -4,8 +4,15 @@
 
 {% block body %}
 
-	<h2> This is my Flask server! </h2>
+	<h2> My List of Friends </h2>
+	<hr>
+	<p>Be my friend</p>
+	<form action="/add friend" method="post">
+		<input type="text" name="fname" id="fname">
+		<input type="text" name="lname" id="lname">
+	</form>
 
-	<img src="{{ url_for('static', filename='images/flask.jpg') }}" />
+
+	
 
 {% endblock %}
